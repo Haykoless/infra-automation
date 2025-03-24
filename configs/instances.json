@@ -16,5 +16,11 @@
         "os": "Windows",
         "cpu": 6,
         "ram": 8
+    },
+    {
+        "name": "HayMachineEXAMPLE",
+        "os": "Ubuntu",
+        "cpu": 8,
+        "ram": 16
     }
 ]
