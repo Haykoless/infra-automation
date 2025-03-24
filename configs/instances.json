@@ -1,0 +1,20 @@
+[
+    {
+        "name": "HayMachine",
+        "os": "Ubuntu",
+        "cpu": 6,
+        "ram": 8
+    },
+    {
+        "name": "HayB",
+        "os": "Ubuntu",
+        "cpu": 6,
+        "ram": 8
+    },
+    {
+        "name": "Haykoless",
+        "os": "Windows",
+        "cpu": 6,
+        "ram": 8
+    }
+]
