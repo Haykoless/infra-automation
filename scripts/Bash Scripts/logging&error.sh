@@ -1,19 +1,22 @@
 #!/bin/bash
+
 LOGFILE="logs/provisioning.log"
 mkdir -p logs
-echo "Bash script started." >> $LOGFILE
 
-if ! command -v nginx &> /dev/null; then
-  echo "Installing Nginx." >> $LOGFILE
-  sudo apt-get update && sudo apt-get install -y nginx || { 
-    echo "Failed to install Nginx." >> $LOGFILE
-    exit 1
-  }
-  echo "Nginx installed." >> $LOGFILE
-else
-  echo "Nginx already installed." >> $LOGFILE
-fi
+echo "----------------------------" >> $LOGFILE
+echo "$(date '+%Y-%m-%d %H:%M:%S') - Bash script started." >> $LOGFILE
 
-echo "Bash script finished." >> $LOGFILE
+# Simulating check for Nginx
+echo "$(date '+%Y-%m-%d %H:%M:%S') - Checking if Nginx is installed..." >> $LOGFILE
+sleep 0.1
+
+# Simulating installation
+echo "$(date '+%Y-%m-%d %H:%M:%S') - Nginx not found. Installing..." >> $LOGFILE
+sleep 0.2
+
+# Simulated success
+echo "$(date '+%Y-%m-%d %H:%M:%S') - Nginx installed successfully (simulated)." >> $LOGFILE
+
+echo "$(date '+%Y-%m-%d %H:%M:%S') - Bash script finished." >> $LOGFILE
+echo "----------------------------" >> $LOGFILE
 exit 0
-# The script above installs Nginx and logs the output to a file called provisioning.log. If the installation fails, the script will log an error message and exit with a status code of 1. This allows the calling script to detect the failure and handle it appropriately.
