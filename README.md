@@ -31,3 +31,8 @@ chmod +x scripts/*.sh
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+
+VM configuration saved.
+Bash script started...
+Nginx installed successfully (simulated).
+Provisioning finished.
