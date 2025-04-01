@@ -17,4 +17,3 @@ if __name__ == "__main__":
     logging.info("Provisioning started.")
     run_bash()
     logging.info("Provisioning finished.")
-    
